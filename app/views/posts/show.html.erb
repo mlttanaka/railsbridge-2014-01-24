@@ -17,8 +17,7 @@
 
 <p>
   <strong>User:</strong>
-  <%= @post.user.email %>
-  <%= @post.all %>
+  <%= poster(@post.user) %>
 </p>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
