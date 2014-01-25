@@ -7,6 +7,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <ul class="hmenu">
+    <li>Message Board</li>
+    <li><%= current_user.email %></li>
+    <li><%= render 'devise/menu/registration_items' %></li>
+    <li><%= render 'devise/menu/login_items' %></li>
+  </ul>
   <div>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
