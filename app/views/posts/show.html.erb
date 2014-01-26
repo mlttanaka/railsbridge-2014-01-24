@@ -17,7 +17,12 @@
 
 <p>
   <strong>User:</strong>
+<<<<<<< HEAD
   <%= poster(@post.user) %>
+=======
+  <%= @post.user.email %>
+  <%= @post.all %>
+>>>>>>> a8e735d091b4d855b9b68efbd4ecf46a02f182cb
 </p>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
